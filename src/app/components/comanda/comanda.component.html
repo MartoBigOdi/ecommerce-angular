@@ -1,7 +1,8 @@
 <h3>COMANDA</h3>
 <div class="productos">
-    <div class="producto">
+    <div class="producto" *ngFor="Prducto producto of arrProductos">
         <p>Nombre - Precio</p>
         <p> Stock: </p>
+        <img [src]="producto.imgUrl" alt="">
     </div>
 </div>

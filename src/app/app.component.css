@@ -4,28 +4,33 @@ h1{
 }
 
 .container{
-    width: 70%;
+    width: 80%;
     margin:  4px auto 0 auto;
     display: flex;
+}
 
+.hamburguesa{
+	background-image: url("https://data.1freewallpapers.com/download/burger-time.jpg");
+	opacity: 0.9;
+	background-image: cover;
 }
 
 .izquierda{
-    width: 70%;
+    width: 30%;
     padding: 10px;
 
 }
 
 .derecha{
-    width: 30%;
+    width: 70%;
     padding: 10px;
 }
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color:  #33343d;
     background-image: linear-gradient(43deg, #33343d 0%, #4b4ea6 46%, #791818 100%);
-    ;
 }
 
 nav {
