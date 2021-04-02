@@ -1,10 +1,11 @@
 h1{
     text-align: center;
+    color: rgb(255, 213, 213);
 }
 
 .container{
     width: 70%;
-    margin: 20px auto 0 auto;
+    margin:  4px auto 0 auto;
     display: flex;
 
 }
@@ -18,4 +19,11 @@ h1{
 .derecha{
     width: 30%;
     padding: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  #33343d;
+    background-image: linear-gradient(43deg, #33343d 0%, #4b4ea6 46%, #791818 100%);
+    ;
 }

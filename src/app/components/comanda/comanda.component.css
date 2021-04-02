@@ -1,0 +1,21 @@
+.productos{
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+}
+
+.producto{
+    width: 25%;
+    margin: 3px;
+    cursor: pointer;
+    color: rgb(255, 213, 213);
+}
+
+
+h3{
+    text-transform: uppercase;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
