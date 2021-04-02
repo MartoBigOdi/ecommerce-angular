@@ -10,8 +10,10 @@ export class AppComponent {
   
   arrComida: Producto[];
   arrBebida: Producto[];
+  productosSeleccionados: Producto[];
 
   constructor(){
+
     this.arrComida = [
       new Producto('Smoked Burger', 'https://deananddennys.com/contenidos/1612363956.jpg', 572.40),
       new Producto('Burger Motal Kombat', 'https://deananddennys.com/contenidos/1612363992.jpg', 645.35),
@@ -26,7 +28,14 @@ export class AppComponent {
       new Producto('Agua Evian (botella chica)', 'https://jumboargentina.vteximg.com.br/arquivos/ids/620121-512-512/Agua-Mineral-Sin-Gas-Evian-500-Ml-2-239174.jpg?v=637466226088570000', 290)
 
     ]
+
+    this.productosSeleccionados = [];
+
   }
 
+  //Capturamos el objeto mediante el $event y lo pusheamos adentro del array de Seleccionados. 
+  onProductoSeleccionado($event){
+    this.productosSeleccionados.push($event);
+  }
 
 }
