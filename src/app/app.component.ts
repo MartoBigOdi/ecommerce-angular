@@ -33,9 +33,17 @@ export class AppComponent {
 
   }
 
-  //Capturamos el objeto mediante el $event y lo pusheamos adentro del array de Seleccionados. 
+  //Capturamos el objeto mediante el $event y lo pusheamos adentro del array de Seleccionados. Le sumamos 1 a la cantidad para la comanda
   onProductoSeleccionado($event){
-    this.productosSeleccionados.push($event);
+  //$event al fin al cabo es un producto
+     const productoEncontrado = this.productosSeleccionados.find(producto => producto.nombre === $event.nombre);
+
+     if(productoEncontrado){
+          productoEncontrado.cantidad++;
+     } else {
+       $event.cantidad = 1;
+      this.productosSeleccionados.push($event);
+     }
   }
 
 }

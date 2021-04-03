@@ -1,8 +1,7 @@
 <h3>Pedido</h3>
 <p><strong>Total: ${{calculaTotal()}} </strong></p>
 <div class="productos">
-    <div class="producto" *ngFor="let producto of arrProductos">
-        <p>   {{producto.nombre}}  ${{producto.precio}}</p>
-        
+    <div class="producto" *ngFor="let producto of arrProductos; let indice = index;" (click)="onClickBorrar(indice)">
+        <p>   {{producto.nombre}} x {{producto.cantidad}} ${{producto.precio * producto.cantidad}}</p>
     </div>
 </div>

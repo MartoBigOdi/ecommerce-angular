@@ -4,7 +4,7 @@
                              (click)="onClick(producto)">
         <img [src]="producto.imgUrl" alt="">
         <p>{{producto.nombre}}</p>
-        <p>{{producto.precio}}</p>
+        <p>${{producto.precio}}</p>
         <p> HAY STOCK: {{producto.hayStock}}</p>
     </div>
 </div>
