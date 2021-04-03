@@ -15,4 +15,13 @@ export class ComandaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  calculaTotal(){
+    let resultado = 0;
+    for(let producto of this.arrProductos){
+      resultado += producto.precio;
+    }
+    return resultado;
+
+  }
+
 }

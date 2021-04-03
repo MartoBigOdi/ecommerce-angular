@@ -1,5 +1,5 @@
 <h3>Pedido</h3>
-<p><strong>Total: $ </strong></p>
+<p><strong>Total: ${{calculaTotal()}} </strong></p>
 <div class="productos">
     <div class="producto" *ngFor="let producto of arrProductos">
         <p>   {{producto.nombre}}  ${{producto.precio}}</p>
